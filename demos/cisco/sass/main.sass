@@ -1,0 +1,85 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $header-font
+	overflow-x: hidden
+	opacity: 1
+
+.header-text
+  text-align: center
+  font-family: $header-font
+  font-size: 25px
+  padding-top: 10px
+
+.question
+  padding: 10px 0
+
+.question-text
+  font-family: $question-font
+  border: 10px
+  border-radius: 5px
+  background: #2196F3
+  color: #fff
+  padding: 0 10px
+
+.text-block
+  padding: 9px
+
+.block
+  background-color: #F7F7F9
+  border-radius: 5px
+  margin-top: -7px
+
+.text-false
+  padding: 0 3px
+  border: 10px
+  border-radius: 5px
+  background: #E0E0E0
+  padding: 5px 4px
+  color: #000
+
+.text-true
+  border: 10px
+  border-radius: 5px
+  background: #009688
+  padding: 5px 4px
+  color: #fff
+
+.pad-block
+  padding-bottom: 6px
+
+
+
+@import "media" // Всегда в конце
