@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="inc/TimeCircles.js"></script>
+	<link rel="stylesheet" href="inc/TimeCircles.css" />
+</head>
+<body>
+	<div class="headerbg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="DateCountdown" data-date="2017-06-12 10:00:00" style="width: 100%;"></div>
+				</div>
+			</div>
+			<script>
+				$("#DateCountdown").TimeCircles({
+					"animation": "smooth",
+					"bg_width": 1.5,
+					"fg_width": 0.07666666666666666,
+					"circle_bg_color": "#60686F",
+					"time": {
+						"Days": {
+							"text": "Days",
+							"color": "#FFEB3B",
+							"show": true
+						},
+						"Hours": {
+							"text": "Hours",
+							"color": "#FF5722",
+							"show": true
+						},
+						"Minutes": {
+							"text": "Minutes",
+							"color": "#38c738",
+							"show": true
+						},
+						"Seconds": {
+							"text": "Seconds",
+							"color": "#03A9F4",
+							"show": true
+						}
+					}
+				});
+
+			</script>  
+		</div>     
+	</body>
+	</html>
