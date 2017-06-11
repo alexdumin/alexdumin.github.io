@@ -10,12 +10,12 @@ $(function() {
  * Replace all SVG images with inline SVG
  */
  $('img.svg').each(function(){
- 	var $img = $(this);
- 	var imgID = $img.attr('id');
- 	var imgClass = $img.attr('class');
- 	var imgURL = $img.attr('src');
+	var $img = $(this);
+	var imgID = $img.attr('id');
+	var imgClass = $img.attr('class');
+	var imgURL = $img.attr('src');
 
- 	$.get(imgURL, function(data) {
+	$.get(imgURL, function(data) {
 				// Get the SVG tag, ignore the rest
 				var $svg = $(data).find('svg');
 
@@ -41,6 +41,15 @@ $(function() {
 
 			}, 'xml');
 
+ });
+
+ $(document).ready(function() {
+	$('a[href^="#"]').click(function(){
+		var el = $(this).attr('href');
+		$('body').animate({
+			scrollTop: $(el).offset().top}, 1000);
+		return false;
+	});
  });
 
 });

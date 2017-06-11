@@ -97,7 +97,7 @@ nav
 .text
 	color: #fff
 	text-align: center
-	padding: 280px 0 220px
+	padding: 220px 0 220px
 
 .h1text
 	font-family: $opensansb-font
@@ -267,16 +267,89 @@ nav
 		padding: 37px 0
 		color: #fff
 	.list
-	  color: #fff
-	  text-align: center
-	  font-size: 20px
+		color: #fff
+		text-align: center
+		font-size: 20px
 	.table
-	  color: #fff
+		color: #fff
 	.parg
-	  margin: -10px 0
+		margin: -10px 0
 	.parg-up
-	  margin: 5px 0 -10px
+		margin: 5px 0 -10px
+	.parg-down
+		margin: 0 0 50px
 
+.workers
+	h2
+		text-align: center
+		padding: 37px 0
+		color: #000
+	.rounded-img-wrap
+		border-radius: 10em
+		border: #555 6px solid
+		overflow: hidden
+		width: 160px
+		height: 160px
+		text-align: center
+		margin: auto
+		transition: all 0.3s
+		img
+			max-width: 100%
+
+.item-vertical-2
+	margin-top: 14px
+	text-align: center
+	&:hover
+		.rounded-img-wrap
+			transform: scale(1.1)
+			border: #00A2F7 6px solid
+		.work-phone
+			color: #00A2F7
+
+	h3
+		margin-top: 30px
+	.work-phone
+		font-family: $exo2bold-font
+		font-size: 17px
+		transition: all 0.3s
+		margin-bottom: 80px
+
+.contacts
+	background-color: #555
+	h2
+		text-align: center
+		color: #fff
+		padding: 37px 0 42px
+
+.map-responsive
+	margin-bottom: 100px
+	overflow: hidden
+	padding-bottom: 56.25%
+	position: relative
+	height: 0
+	iframe
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		position: absolute
+
+.cont-text
+	color: #fff
+	font-size: 18px
+	p
+		margin:
+			top: 0
+			bottom: 5px
+	.fa
+		color: #00A2F7
+		margin-right: 5px
+		font-size: 24px
+		width: 15px
+		text-align: center
+
+.main-foot
+  background-color: darken(#555, 10%)
 
 
 @import "media" // Всегда в конце
