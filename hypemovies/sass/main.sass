@@ -1,0 +1,112 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+h1
+  font-size: 32px
+  font-family: $default-bold
+  line-height: 1.2em
+  margin-top: 5px
+  margin-bottom: 0px
+
+h2
+  font-size: 17px
+  line-height: 1.6em
+  margin-top: 15px
+  margin-bottom: 0px
+
+p
+  font-size: 17px
+  line-height: 1.6em
+
+.navbar-default 
+	background: #FFF
+	border: none	
+	box-shadow: 0 0 3px rgba(0,0,0,0.5)
+
+.navbar
+  text-align: center
+  margin-bottom: 8px
+
+.logo
+	display: inline-block
+	padding: 12px
+	width: 200px
+	img
+		width: 100%
+
+.titletext
+  margin-top: 10px
+  margin-bottom: 0px
+
+.picture
+  margin-top: 15px
+  margin-bottom: 15px
+  width: 100%
+
+.adaptive-wrap
+  position: relative
+  margin-top: 10px
+  margin-bottom: 10px
+  padding-bottom: 56.25%
+  padding-top: 30px
+  height: 0
+  overflow: hidden
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
